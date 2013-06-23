@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A44D698E176A42E000C569E4 /* PluginManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A44D698D176A42E000C569E4 /* PluginManager.framework */; };
+		1A3ED0E617777B0D00D12CE2 /* PluginManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A3ED0E517777B0D00D12CE2 /* PluginManager.framework */; };
+		1A6B005E17777ED900341454 /* PluginManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A3ED0E517777B0D00D12CE2 /* PluginManager.framework */; };
 		A44D698F176A42E000C569E4 /* PluginManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A44D698D176A42E000C569E4 /* PluginManager.framework */; };
-		A44D6990176A42E000C569E4 /* PluginManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A44D698D176A42E000C569E4 /* PluginManager.framework */; };
 		A44D69A7176A556A00C569E4 /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = A44D6993176A556A00C569E4 /* SBJsonStreamWriterState.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		A44D69A8176A556A00C569E4 /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = A44D6993176A556A00C569E4 /* SBJsonStreamWriterState.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		A44D69A9176A556A00C569E4 /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = A44D6993176A556A00C569E4 /* SBJsonStreamWriterState.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
@@ -80,6 +80,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A3ED0E217777ADA00D12CE2 /* ApertureExportManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApertureExportManager.h; sourceTree = "<group>"; };
+		1A3ED0E317777ADA00D12CE2 /* ApertureExportPlugIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApertureExportPlugIn.h; sourceTree = "<group>"; };
+		1A3ED0E417777ADA00D12CE2 /* ApertureSDKCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApertureSDKCommon.h; sourceTree = "<group>"; };
+		1A3ED0E517777B0D00D12CE2 /* PluginManager.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PluginManager.framework; path = ../../../../../Library/Frameworks/PluginManager.framework; sourceTree = "<group>"; };
 		A44D698D176A42E000C569E4 /* PluginManager.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PluginManager.framework; path = ../../../../Developer/Aperture/Examples/FxPlug/PluginManager.framework; sourceTree = "<group>"; };
 		A44D6992176A556A00C569E4 /* SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJson.h; sourceTree = "<group>"; };
 		A44D6993176A556A00C569E4 /* SBJsonStreamWriterState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterState.m; sourceTree = "<group>"; };
@@ -156,9 +160,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A6B005E17777ED900341454 /* PluginManager.framework in Frameworks */,
 				D2A08CBB13896E8A009659CC /* Cocoa.framework in Frameworks */,
 				D2D4AA6713A3ED43007F3A53 /* Quartz.framework in Frameworks */,
-				A44D6990176A42E000C569E4 /* PluginManager.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,9 +170,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A3ED0E617777B0D00D12CE2 /* PluginManager.framework in Frameworks */,
 				D2C00EEA136F864D002ADF41 /* Cocoa.framework in Frameworks */,
 				D2D4AA6813A3F447007F3A53 /* Quartz.framework in Frameworks */,
-				A44D698E176A42E000C569E4 /* PluginManager.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,6 +190,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A3ED0E117777ADA00D12CE2 /* ApertureHeaders */ = {
+			isa = PBXGroup;
+			children = (
+				1A3ED0E217777ADA00D12CE2 /* ApertureExportManager.h */,
+				1A3ED0E317777ADA00D12CE2 /* ApertureExportPlugIn.h */,
+				1A3ED0E417777ADA00D12CE2 /* ApertureSDKCommon.h */,
+			);
+			path = ApertureHeaders;
+			sourceTree = "<group>";
+		};
 		A44D6991176A554000C569E4 /* JSON */ = {
 			isa = PBXGroup;
 			children = (
@@ -240,6 +254,8 @@
 		D2C00EDB136F864D002ADF41 = {
 			isa = PBXGroup;
 			children = (
+				1A3ED0E517777B0D00D12CE2 /* PluginManager.framework */,
+				1A3ED0E117777ADA00D12CE2 /* ApertureHeaders */,
 				A44D6991176A554000C569E4 /* JSON */,
 				D2C00F2E136F8710002ADF41 /* Restful Gallery */,
 				D2C00EEF136F864D002ADF41 /* ApertureToGallery3 */,
@@ -386,6 +402,7 @@
 				D2C00EE2136F864D002ADF41 /* Sources */,
 				D2C00EE3136F864D002ADF41 /* Frameworks */,
 				D2C00EE4136F864D002ADF41 /* Resources */,
+				1A3ED0E717777B7400D12CE2 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -470,6 +487,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A3ED0E717777B7400D12CE2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "exit 0\n# This script will put a link to the plug-in in Aperture's plug-in's folder (~/library/app support/aperture/plug-ins/) if you're building in debug, but clears out the plug-in for release builds.\n\n# Make sure the Aperture export plug-ins folder exists\nif ! [ -d \"${USER_LIBRARY_DIR}/Application Support/Aperture/Plug-Ins/Export\" ]; then\nmkdir -p \"${USER_LIBRARY_DIR}/Application Support/Aperture/Plug-Ins/Export\"\nfi\n\n\n# Clean up any previous products/symbolic links in the Aperture export plug-ins folder\nif [ -a \"${USER_LIBRARY_DIR}/Application Support/Aperture/Plug-Ins/Export/${FULL_PRODUCT_NAME}\" ]; then\nrm -Rf \"${USER_LIBRARY_DIR}/Application Support/Aperture/Plug-Ins/Export/${FULL_PRODUCT_NAME}\"\nfi\n\n# Depending on the build configuration, link to the most recent product\nif [ \"${CONFIGURATION}\" == \"Debug\" ]; then\n# if we're debugging, add a symbolic link to the plug-in\nln -sf \"${TARGET_BUILD_DIR}/${FULL_PRODUCT_NAME}\" \\\n\"${USER_LIBRARY_DIR}/Application Support/Aperture/Plug-Ins/Export/${FULL_PRODUCT_NAME}\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D2A08CB513896E8A009659CC /* Sources */ = {
@@ -601,7 +634,7 @@
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/Developer/Aperture/Examples/FxPlug,
+					"/Library/Frameworks/**",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -625,7 +658,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/Developer/Aperture/Examples/FxPlug,
+					"/Library/Frameworks/**",
 				);
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -708,7 +741,7 @@
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/Developer/Aperture/Examples/FxPlug,
+					"/Library/Frameworks/**",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -732,7 +765,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/Developer/Aperture/Examples/FxPlug,
+					"/Library/Frameworks/**",
 				);
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
